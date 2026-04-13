@@ -18,3 +18,4 @@ add_executable(nn src/main.cpp)
 
 # Link matrix library
 target_link_libraries(nn matrix)
+

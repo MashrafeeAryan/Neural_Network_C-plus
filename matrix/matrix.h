@@ -21,10 +21,10 @@ public:
     //However, this does the same without the indexing manualy
     
     //Gives reference for functions to write it
-    double& oeperator()(int r, int c);
+    double& operator()(int r, int c);
 
     //Only used for reading. That's why using const. Can't be modified
-    double operator()(int r, int c); const;
+    double operator()(int r, int c) const;
 
     // declaring function; It will fill matrix with random numbers
     void randomize();

@@ -1,5 +1,5 @@
 //Imports from matrix header
-#include "matrix/matrix.h"
+#include "matrix.h"
 //includes standard c library utilities
 //such as rand()
 #include <cstdlib>
@@ -35,7 +35,7 @@ void Matrix::randomize(){
             //Gives 0.0 -> 1.0 
             // * 2 -1 makes the range -1 to 1
         x = ((double) rand()/ RAND_MAX) * 2 -1;
-        
+
 
     }
 }

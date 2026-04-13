@@ -1,5 +1,5 @@
 #include <iostream>
-#include "matrix/matrix.h"
+#include "matrix.h"
 
 int main(){
     std:: cout << "Neural Network in C+++ " << std::endl;
@@ -16,5 +16,5 @@ int main(){
     std::cout << m(0,0) << " " << m(0,1) << std::endl;
     std::cout << m(1,0) << " " << m(1,1) << std::endl;
     
-    
+
 }
