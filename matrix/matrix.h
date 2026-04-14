@@ -29,4 +29,20 @@ public:
     // declaring function; It will fill matrix with random numbers
     void randomize();
 
+    //For matrix multiplication
+    // Matrix at the start is the return type of the function which is a custom type
+    // We use const Matrix& because we don't want to change the input and const helps with that
+        // Matrix means a type heere
+        // The & is a reference that refers to the original matrix input
+        // Instead of making a copy we refer it and it will be faster because matrixes can get huge
+        // Copying it is not time efficient
+        //input_name is the variable that has matrix reference
+    
+    //Const in parameter says do not change the matrix that we are passing
+    //Const at the end says do not change the object calling the function
+    Matrix multiply(const Matrix& input_matrix) const; 
+    
+
+    
+
 };
