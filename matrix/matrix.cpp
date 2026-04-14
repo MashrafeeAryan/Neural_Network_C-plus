@@ -38,4 +38,7 @@ void Matrix::randomize(){
 
 
     }
+
+    //Implementing multiply function for matrix mutliplication
+    
 }

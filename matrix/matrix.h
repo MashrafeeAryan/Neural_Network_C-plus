@@ -46,5 +46,6 @@ public:
     Matrix add(const Matrix& input_matrix) const;
 
     Matrix transpose() const;
-
+    //FOr multiplication between matrix:
+    // number of columsn of A = number of rows of B
 };
