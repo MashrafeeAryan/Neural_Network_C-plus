@@ -40,9 +40,11 @@ public:
     
     //Const in parameter says do not change the matrix that we are passing
     //Const at the end says do not change the object calling the function
+        //EX: A.multiply(B). Both A and B should not be modified
     Matrix multiply(const Matrix& input_matrix) const; 
-    
+    //For Matrix addition
+    Matrix add(const Matrix& input_matrix) const;
 
-    
+    Matrix transpose() const;
 
 };
