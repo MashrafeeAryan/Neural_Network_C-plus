@@ -42,3 +42,11 @@ void Matrix::randomize(){
     //Implementing multiply function for matrix mutliplication
     
 }
+
+//Multiplication of matrix
+//Instead of copying the argument passed, it just refers to it and names it other
+//Then they make sure other is const and it does not allow changes to other.
+// Last const makes sure, there are no changes to the 
+Matrix Matrix::multiply(const Matrix& other) const {
+
+}
