@@ -48,5 +48,20 @@ void Matrix::randomize(){
 //Then they make sure other is const and it does not allow changes to other.
 // Last const makes sure, there are no changes to the 
 Matrix Matrix::multiply(const Matrix& other) const {
+    //Create a result matrix
+    //Rows of first x columns of second
+    Matrix result(rows, other.cols);
 
+    // Let's us go row by row
+    for (int i = 0; i < rows; i++){
+        for (int j =0; j < other.cols; j++){
+            double sum = 0;
+            for (int k =0; k< cols; k++){
+                //row of first matrix × column of second matrix
+                sum += (*this)(i, k) * other(k, j);
+            }
+            result(i, j) = sum;
+        }
+    }
+    return result;
 }
