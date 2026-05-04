@@ -68,17 +68,19 @@ Matrix Matrix::multiply(const Matrix& other) const {
 
 
 //Matrix addition
-Matrix Matrix::add(const Matrix &other) const{
-    //using (i, j) I can use different indexes
-    //Current object is object A, so it will be results
-    Matrix results(rows, cols);
-    double sum = 0;
-    for(int i = 0; i< rows; i++){
-        for (int j = 0; j< cols; j++){
-            sum = (*this)(i,j) + (other)(i,j);
-            results(i, j) = sum;
+Matrix Matrix::add(const Matrix &other) const {
+    // check dimensions
+    if (rows != other.rows || cols != other.cols) {
+        throw std::invalid_argument("Matrix dimensions must match for addition");
+    }
 
+    Matrix result(rows, cols);
+
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            result(i, j) = (*this)(i, j) + other(i, j);
         }
     }
 
+    return result;
 }
