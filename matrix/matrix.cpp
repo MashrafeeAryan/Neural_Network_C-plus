@@ -70,9 +70,6 @@ Matrix Matrix::multiply(const Matrix& other) const {
 //Matrix addition
 Matrix Matrix::add(const Matrix &other) const {
     // check dimensions
-    if (rows != other.rows || cols != other.cols) {
-        throw std::invalid_argument("Matrix dimensions must match for addition");
-    }
 
     Matrix result(rows, cols);
 
@@ -83,4 +80,15 @@ Matrix Matrix::add(const Matrix &other) const {
     }
 
     return result;
+}
+
+
+//Transpose: swaps rows and columns
+
+Matrix Matrix::transpose() const {
+    // Create an empty matrix with cols and rows
+    Matrix result(cols, rows);
+
+    //Loop through original matrix
+    
 }

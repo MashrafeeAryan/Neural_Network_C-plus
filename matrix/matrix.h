@@ -31,7 +31,7 @@ public:
 
     //For matrix multiplication
     // Matrix at the start is the return type of the function which is a custom type
-    // We use const Matrix& because we don't want to change the input and const helps with that
+    // We us e const Matrix& because we don't want to change the input and const helps with that
         // Matrix means a type heere
         // The & is a reference that refers to the original matrix input
         // Instead of making a copy we refer it and it will be faster because matrixes can get huge

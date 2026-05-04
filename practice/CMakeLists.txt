@@ -1,0 +1,3 @@
+add_executable(practice_main practice_main.cpp)
+
+target_link_libraries(practice_main PRIVATE matrix)

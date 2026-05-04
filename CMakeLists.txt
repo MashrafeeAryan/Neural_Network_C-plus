@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Add matrix module
 add_subdirectory(matrix)
+add_subdirectory(practice)
 
 # Build executable
 #Compiles the file and creates a runnable program called nn
@@ -18,4 +19,3 @@ add_executable(nn src/main.cpp)
 
 # Link matrix library
 target_link_libraries(nn matrix)
-
